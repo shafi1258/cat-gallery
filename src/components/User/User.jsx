@@ -21,7 +21,7 @@ function User({ user, i, selactedValue }) {
     <Card
       onClick={() => handleClick(i)}
       key={i}
-      style={{ width: "18rem", margin: "0px 15px 15px 0px" }}
+      style={{ width: "18rem", margin: "0px 15px 15px 0px", background: "#daddf0" }}
     >
       <Card.Img variant="top" src={image} />
       <Card.Body>

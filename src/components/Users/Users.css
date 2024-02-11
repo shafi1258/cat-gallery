@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form1 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#label1 {
+    font-size: 20px;
+    margin-right: 10px;
+    color: beige
+}
+
+#input1 {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray; /* Corrected border property */
+    padding: 15px;
+    margin-right: 10px;
+    color: black;
+}
+
+
+.userContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+    
+    
+}

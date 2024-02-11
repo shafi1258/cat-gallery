@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import User from "../User/User";
+import "./Users.css"
 
 function Users() {
   const [users, setUsers] = useState([]);
@@ -40,39 +41,14 @@ function Users() {
   console.log(users);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-evenly",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <form
-          style={{
-            padding: "10px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <label style={{ fontSize: "35px", marginRight: "10px" }}>
-            Search Here:
+    
+    <div className="container">
+      <div className="formContainer">
+        <form id="form1">
+          <label id="label1">
+            <h1>Search Here:</h1>
           </label>
-          <input
-            style={{
-              backgroundColor: "white",
-              borderRadius: "10px",
-              borderColor: "gray",
-              padding: "15px",
-              marginRight: "10px",
-              color: "black",
-            }}
+          <input id="input1"
             type="text"
             placeholder="Search by username"
             onChange={(e) => {
@@ -81,11 +57,11 @@ function Users() {
           />
         </form>
         <form>
-          <label style={{ fontSize: "35px", marginRight: "10px" }}>
-            Sort by:
+          <label id="label1" >
+            <h1>Sort by:</h1>
           </label>
 
-          <select onClick={(e) => handleSelect(e)}>
+          <select id="input1" onClick={(e) => handleSelect(e)}>
             <option value="name">Name</option>
             <option value="email">Email</option>
             <option value="company">Company Name</option>
@@ -93,14 +69,7 @@ function Users() {
         </form>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          marginTop: "10px",
-          justifyContent: "center",
-        }}
-      >
+      <div className="userContainer">
         {users.map((user, i) => {
           return (
             <User
