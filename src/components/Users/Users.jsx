@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import User from "../User/User";
-import "./Users.css"
+import "./Users.css";
 
 function Users() {
   const [users, setUsers] = useState([]);
@@ -41,14 +41,14 @@ function Users() {
   console.log(users);
 
   return (
-    
     <div className="container">
       <div className="formContainer">
         <form id="form1">
           <label id="label1">
             <h1>Search Here:</h1>
           </label>
-          <input id="input1"
+          <input
+            id="input1"
             type="text"
             placeholder="Search by username"
             onChange={(e) => {
@@ -57,7 +57,7 @@ function Users() {
           />
         </form>
         <form id="form1">
-          <label id="label1" >
+          <label id="label1">
             <h1>Sort by:</h1>
           </label>
 

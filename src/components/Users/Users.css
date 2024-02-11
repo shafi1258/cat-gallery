@@ -1,51 +1,54 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 2px solid brown;
 }
 
 .formContainer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid green;
 }
 
 #form1 {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #label1 {
-    font-size: 20px;
-    margin-right: 10px;
-    color: beige
+  font-size: 10px;
+  margin-right: 10px;
+  color: beige;
+}
+
+#label1 h1 {
+  font-size: 20px;
+  line-height: 20px;
 }
 
 #input1 {
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid gray; /* Corrected border property */
-    padding: 15px;
-    margin-right: 10px;
-    color: black;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid gray; /* Corrected border property */
+  padding: 10px;
+  margin-right: 10px;
+  color: black;
 }
-
 
 .userContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    justify-content: center;
-    
-    
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+  border: 1px solid black;
 }
 
-@media(max-width: 650px){
-    .formContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+@media (max-width: 650px) {
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

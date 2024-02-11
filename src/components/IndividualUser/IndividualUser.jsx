@@ -35,7 +35,7 @@ function IndividualUser() {
       >
         <div >
           <Card
-            key={individualUser.id}
+            key={individualUser.id} 
             style={{
               // width: "18rem",
               width: "50vw",
