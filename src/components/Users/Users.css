@@ -1,20 +1,17 @@
-.container {
+.users-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  border: 2px solid brown;
 }
 
 .formContainer {
   display: flex;
-  justify-content: space-between;
-  border: 1px solid green;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #form1 {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 #label1 {
@@ -33,7 +30,6 @@
   border-radius: 10px;
   border: 1px solid gray; /* Corrected border property */
   padding: 10px;
-  margin-right: 10px;
   color: black;
 }
 
@@ -42,13 +38,7 @@
   flex-wrap: wrap;
   margin-top: 10px;
   justify-content: center;
-  border: 1px solid black;
 }
 
 @media (max-width: 650px) {
-  .formContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
 }

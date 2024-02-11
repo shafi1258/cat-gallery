@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import User from "../User/User";
 import "./Users.css";
+import React from "react";
 
 function Users() {
   const [users, setUsers] = useState([]);
@@ -14,7 +15,64 @@ function Users() {
   };
 
   const handleSelect = (e) => {
-    setSelectedValue(e.target.value);
+    console.log(e.target.value);
+
+    if (e.target.value) {
+      if (e.target.value === "username") {
+        let y = users.sort((a, b) => {
+          if (a.firstName > b.firstName) {
+            return 1;
+          } else if (a.firstName < b.firstName) {
+            return -1;
+          } else {
+            return 0;
+          }
+        });
+
+        setUsers(y);
+        setSelectedValue("username");
+        console.log(users);
+      } else if (e.target.value === "email") {
+        let y = users.sort((a, b) => {
+          if (a.email > b.email) {
+            return 1;
+          } else if (a.email < b.email) {
+            return -1;
+          } else {
+            return 0;
+          }
+        });
+
+        setUsers(y);
+        setSelectedValue("email");
+      } else if (e.target.value === "company") {
+        let y = users.sort((a, b) => {
+          if (a.company.name > b.company.name) {
+            return 1;
+          } else if (a.company.name < b.company.name) {
+            return -1;
+          } else {
+            return 0;
+          }
+        });
+
+        setUsers(y);
+        setSelectedValue("company");
+      } else if (e.target.value === "category") {
+        let y = users.sort((a, b) => {
+          if (a.id > b.id) {
+            return 1;
+          } else if (a.id < b.id) {
+            return -1;
+          } else {
+            return 0;
+          }
+        });
+
+        setUsers(y);
+        setSelectedValue("company");
+      }
+    }
   };
 
   useEffect(() => {
@@ -32,16 +90,11 @@ function Users() {
         } else {
           setUsers(data.users);
         }
-
-        if (selectedValue) {
-        }
       });
-  }, [userName, selectedValue]);
-
-  console.log(users);
+  }, [userName]);
 
   return (
-    <div className="container">
+    <div className="users-container">
       <div className="formContainer">
         <form id="form1">
           <label id="label1">
@@ -56,13 +109,15 @@ function Users() {
             }}
           />
         </form>
+
         <form id="form1">
           <label id="label1">
             <h1>Sort by:</h1>
           </label>
 
           <select id="input1" onClick={(e) => handleSelect(e)}>
-            <option value="name">Name</option>
+            <option value="category">Category</option>
+            <option value="username">Name</option>
             <option value="email">Email</option>
             <option value="company">Company Name</option>
           </select>
