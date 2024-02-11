@@ -40,7 +40,7 @@ function IndividualUser() {
               // width: "18rem",
               width: "50vw",
               margin: "0px 15px 15px 0px",
-              background: "grey"
+              background: "#daddf0"
             }}
           >
             <Card.Img className="CardImg"
@@ -49,7 +49,8 @@ function IndividualUser() {
               style={{
                 width: "25rem",
                 display: "flex",
-                backgroundColor: "grey",
+                backgroundColor: "white",
+                borderRadius: "20px",
                 margin: "0 auto",
                 marginTop: "20px",
               }}

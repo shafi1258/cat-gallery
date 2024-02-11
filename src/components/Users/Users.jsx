@@ -56,7 +56,7 @@ function Users() {
             }}
           />
         </form>
-        <form>
+        <form id="form1">
           <label id="label1" >
             <h1>Sort by:</h1>
           </label>
