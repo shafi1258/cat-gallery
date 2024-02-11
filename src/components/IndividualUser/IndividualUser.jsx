@@ -47,7 +47,7 @@ function IndividualUser() {
               variant="top"
               src={individualUser.image}
               style={{
-                width: "25rem",
+                width: "20vw",
                 display: "flex",
                 backgroundColor: "white",
                 borderRadius: "20px",
