@@ -57,7 +57,7 @@ function IndividualUser() {
             />
             <Card.Body style={{ margin: "0 auto" }}>
               <Card.Title>
-               <h1> Name: {individualUser.firstName} {individualUser.lastName}</h1>
+               <h1 style={{fontSize: "25px"}}> Name: {individualUser.firstName} {individualUser.lastName}</h1>
               </Card.Title>
               <Card.Text>Email: {individualUser.email}</Card.Text>
               <Card.Text>Username: {individualUser.username}</Card.Text>
