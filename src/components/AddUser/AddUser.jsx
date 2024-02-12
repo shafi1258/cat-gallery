@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './AddUsers.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 const AddUser = () => {
   const [formData, setFormData] = useState({
@@ -27,6 +29,7 @@ const AddUser = () => {
   };
 
   return (
+    <>
     <form className="user-form" onSubmit={handleSubmit}>
         <h1>Add New User</h1>
       <div className="form-group">
@@ -94,6 +97,12 @@ const AddUser = () => {
       </div>
       <button type="submit">Submit</button>
     </form>
+    <div className='btnCenter'>
+      <Link to={"/"}>
+        <Button>Back to Home</Button>
+        </Link>
+        </div>
+    </>
   );
 };
 
