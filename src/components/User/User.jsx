@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import IndividualUser from "../IndividualUser/IndividualUser";
 
+
 function User({ user, i, selactedValue }) {
   // console.log(user);
 
@@ -18,6 +19,7 @@ function User({ user, i, selactedValue }) {
 
   const { image, firstName, lastName, email, username } = user;
   return (
+    <div>
     <Card
       
       key={i}
@@ -37,6 +39,7 @@ function User({ user, i, selactedValue }) {
         <Card.Text>Company: {user.company.name}</Card.Text>
       </Card.Body>
     </Card>
+    </div>
   );
 }
 

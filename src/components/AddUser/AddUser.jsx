@@ -7,6 +7,7 @@ const AddUser = () => {
     firstName: '',
     lastName: '',
     username: '',
+    email: '',
     address: '',
     company: '',
   });
@@ -21,8 +22,8 @@ const AddUser = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can perform actions with the form data here, e.g., send it to a server or store it in state
-    console.log('Form Data:', formData);
+
+    console.log("formData:", formData)
   };
 
   return (
@@ -61,6 +62,15 @@ const AddUser = () => {
           type="text"
           name="username"
           value={formData.username}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="form-group">
+        <label>Email:</label>
+        <input
+          type="text"
+          name="username"
+          value={formData.email}
           onChange={handleChange}
         />
       </div>
