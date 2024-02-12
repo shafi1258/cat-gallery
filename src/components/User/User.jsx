@@ -23,7 +23,7 @@ function User({ user, i, selactedValue }) {
     <Card
       
       key={i}
-      style={{ width: "18rem", margin: "0px 15px 15px 0px", background: "#daddf0" }}
+      style={{ width: "18rem", margin: "0px 15px 15px 0px", background: "#daddf0", height: "559px"}}
     >
       <Card.Img variant="top" src={image} />
       <Card.Body>
