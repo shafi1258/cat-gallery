@@ -72,7 +72,7 @@ const AddUser = () => {
         <label>Email:</label>
         <input
           type="text"
-          name="username"
+          name="email"
           value={formData.email}
           onChange={handleChange}
         />

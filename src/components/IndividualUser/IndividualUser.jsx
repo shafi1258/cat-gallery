@@ -33,7 +33,7 @@ function IndividualUser() {
         }}
       >
         <div>
-          <Card
+          <Card className="individualCard"
             key={individualUser.id}
             style={{
               // width: "18rem",
