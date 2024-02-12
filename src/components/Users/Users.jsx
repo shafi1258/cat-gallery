@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import User from "../User/User";
 import "./Users.css";
 import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 function Users() {
   const [users, setUsers] = useState([]);
@@ -122,6 +124,11 @@ function Users() {
             <option value="company">Company Name</option>
           </select>
         </form>
+        <div id="label1">
+          <Link to= {"/adduser"}>
+          <Button id="button">Add User</Button>
+          </Link>
+        </div>
       </div>
 
       <div className="userContainer">
