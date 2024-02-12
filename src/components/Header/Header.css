@@ -6,15 +6,21 @@
 
 .catgallery {
   display: inline-block;
-  padding: 10px 100px;
-  border: 5px solid rgb(228, 216, 216);
+  padding: 10px 100px; 
   border-radius: 20px;
   background-color: aliceblue;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #414542;
 }
 
-@media (max-width: 650px) {
-  .formContainer {
+
+
+@media (max-width: 1100px) {
+  .catgallery {
     display: flex;
+    padding: 10px 100px; 
     flex-direction: column;
     justify-content: space-between;
   }

@@ -1,5 +1,5 @@
-import  { useEffect, useState } from "react";
-import { Button, Card, } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import { Button, Card } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 
 function IndividualUser() {
@@ -29,21 +29,21 @@ function IndividualUser() {
           justifyContent: "center",
           alignItems: "center",
           width: "100vw",
-          // backgroundColor: "green",
           marginTop: "20px",
         }}
       >
-        <div >
+        <div>
           <Card
-            key={individualUser.id} 
+            key={individualUser.id}
             style={{
               // width: "18rem",
               width: "50vw",
               margin: "0px 15px 15px 0px",
-              background: "#daddf0"
+              background: "#daddf0",
             }}
           >
-            <Card.Img className="CardImg"
+            <Card.Img
+              className="CardImg"
               variant="top"
               src={individualUser.image}
               style={{
@@ -57,7 +57,10 @@ function IndividualUser() {
             />
             <Card.Body style={{ margin: "0 auto" }}>
               <Card.Title>
-               <h1 style={{fontSize: "25px"}}> Name: {individualUser.firstName} {individualUser.lastName}</h1>
+                <h1 style={{ fontSize: "25px" }}>
+                  {" "}
+                  Name: {individualUser.firstName} {individualUser.lastName}
+                </h1>
               </Card.Title>
               <Card.Text>Email: {individualUser.email}</Card.Text>
               <Card.Text>Username: {individualUser.username}</Card.Text>

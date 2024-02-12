@@ -19,13 +19,13 @@ function User({ user, i, selactedValue }) {
   const { image, firstName, lastName, email, username } = user;
   return (
     <Card
-      onClick={() => handleClick(i)}
+      
       key={i}
       style={{ width: "18rem", margin: "0px 15px 15px 0px", background: "#daddf0" }}
     >
       <Card.Img variant="top" src={image} />
       <Card.Body>
-        <Card.Title>
+        <Card.Title style= {{cursor: "pointer"}} onClick={() => handleClick(i)}>
           Name: {firstName} {lastName}
         </Card.Title>
         <Card.Text>Username: {username}</Card.Text>
